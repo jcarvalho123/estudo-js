@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos</title>
+    <link rel="stylesheet" href="estyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Gastos</h1>
+        <form id="gastoForm">
+            <input type="number" id="valor" placeholder="Valor" required>
+            <input type="text" id="categoria" placeholder="Categoria" required>
+            <input type="date" id="data" required>
+            <button type="submit">Adicionar Gasto</button>
+        </form>
+        <div id="listaGastos">
+            <h2>Lista de Gastos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Valor</th>
+                        <th>Categoria</th>
+                        <th>Data</th>
+                        <th>Ações</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="corpoTabela">
+                    <!-- Gastos serão inseridos aqui via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <div id="totalGastos">
+            <h2>Total Gasto: R$ <span id="total">0.00</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
